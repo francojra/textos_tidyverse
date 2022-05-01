@@ -56,3 +56,8 @@ grep("iguais", a5)
 grep("iguais", a5, value = TRUE) # Retorna todas as palavras com os termos "dade"
 
 grepl("a", a5) # Função que retorna true ou false
+
+# Substituindo termos ----------------------------------------------------------------------------------------------------------------------
+
+sub("a", "A", a5) # Substitui o primeiro "a" de todas as palavras por "A"
+gsub("a", "A", a5) # Substitui todas os "a" das palavras
