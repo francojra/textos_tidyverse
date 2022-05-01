@@ -61,3 +61,16 @@ grepl("a", a5) # Função que retorna true ou false
 
 sub("a", "A", a5) # Substitui o primeiro "a" de todas as palavras por "A"
 gsub("a", "A", a5) # Substitui todas os "a" das palavras
+
+# Utilizando as funções em colunas de data frames ------------------------------------------------------------------------------------------
+
+iris1 <- iris
+iris1$Species <- gsub("setosa", "Tipo_1", iris1$Species)
+iris1$Species <- gsub("versicolor", "Tipo_2", iris1$Species)
+iris1$Species <- gsub("virginica", "Tipo_3", iris1$Species)
+
+view(iris1)
+
+iris1$Species <- gsub("Tipo", "Espécie", iris1$Species)
+
+view(iris1)
