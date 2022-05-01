@@ -7,4 +7,9 @@
 ## Tópicos do script:
 
 - Pacote necessário;
-- 
+- Funções strsplit e unlist;
+- Fazendo o oposto com 'collapse';
+- Misturando letras;
+- Funções para localizar termos;
+- Substituindo termos;
+- Utilizando as funções em colunas de data frames.
