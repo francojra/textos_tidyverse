@@ -45,3 +45,14 @@ LETTERS # Letras do alfabeto em maiúsculo
 
 paste(letters, LETTERS, sep = "/")
 paste(c(letters, LETTERS), sep = "/")
+
+# Funções para localizar termos ------------------------------------------------------------------------------------------------------------
+
+grep("a", a5) # Retorna a posição de todas as palavras com a letra "a"
+grep("a", a5, value = TRUE) # Retorna todas as palavras com a letra "a"
+grep("dade", a5, value = TRUE) # Retorna todas as palavras com os termos "dade"
+
+grep("iguais", a5)
+grep("iguais", a5, value = TRUE) # Retorna todas as palavras com os termos "dade"
+
+grepl("a", a5) # Função que retorna true ou false
