@@ -10,7 +10,7 @@ library(tidyverse)
 
 # strings = linhas
 
-# Prática ----------------------------------------------------------------------------------------------------------------------------------
+# Funções strsplit e unlist ----------------------------------------------------------------------------------------------------------------------------------
 
 art5 <- "Todos são iguais perante a lei, sem distinção de qualquer natureza, garantindo-se
 aos brasileiros e aos estrangeiros residentes no país à inviolabilidade do direito à vida,
@@ -31,3 +31,9 @@ a6 <- a6 %>% unlist() # Muda do formato 'list' para 'vector'
 a6
 
 a6[3] # Apresenta a letra da posição 3
+
+# Fazendo o oposto com 'collapse' ----------------------------------------------------------------------------------------------------------
+
+paste(a5, collapse = " ") # Une aspalavras e separa o texto por espaço
+paste(a5, collapse = "") # Nenhuma separação
+paste(a5, collapse = "#") # Separação das palavras do texto com "#"
