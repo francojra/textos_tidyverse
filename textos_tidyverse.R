@@ -37,3 +37,11 @@ a6[3] # Apresenta a letra da posição 3
 paste(a5, collapse = " ") # Une aspalavras e separa o texto por espaço
 paste(a5, collapse = "") # Nenhuma separação
 paste(a5, collapse = "#") # Separação das palavras do texto com "#"
+
+# Misturando letras ------------------------------------------------------------------------------------------------------------------------
+
+letters # Letras do alfabeto em minúsculo
+LETTERS # Letras do alfabeto em maiúsculo
+
+paste(letters, LETTERS, sep = "/")
+paste(c(letters, LETTERS), sep = "/")
